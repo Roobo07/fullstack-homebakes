@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import Link from 'next/link'
 
+const supabase = createClient()
+
 export default function RegisterPage() {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -15,7 +17,6 @@ export default function RegisterPage() {
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
-  const supabase = createClient()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -39,9 +40,9 @@ export default function RegisterPage() {
         data: {
           full_name: formData.fullName,
           phone: formData.phone,
-          role: 'customer'
-        }
-      }
+          role: 'customer',
+        },
+      },
     })
 
     if (signUpError) {
