@@ -33,7 +33,7 @@ export default function Home() {
 
       {/* Features Grid */}
       <section className="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-16 px-6">
-        <div className="max-w-5-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start gap-3">
             <div className="p-3 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400">
               <Sparkles className="w-6 h-6" />
