@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Bakery warm color palette */
+  --color-primary-50: #fdf2f8;
+  --color-primary-100: #fce7f3;
+  --color-primary-200: #fbcfe8;
+  --color-primary-300: #f9a8d4;
+  --color-primary-400: #f472b6;
+  --color-primary-500: #ec4899;
+  --color-primary-600: #db2777;
+  --color-primary-700: #be185d;
+  --color-primary-800: #9d174d;
+  --color-primary-900: #831843;
+  
+  /* Warm browns for bakery feel */
+  --color-bakery-50: #faf5f0;
+  --color-bakery-100: #f5ebe0;
+  --color-bakery-200: #e8d5c0;
+  --color-bakery-300: #d4b896;
+  --color-bakery-400: #c49a6c;
+  --color-bakery-500: #b07d4f;
+  --color-bakery-600: #9a6840;
+  --color-bakery-700: #7d5235;
+  --color-bakery-800: #66432e;
+  --color-bakery-900: #533828;
+  
+  /* Gold accent */
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+}
+
+:root {
+  --background: #fffbf5;
+  --foreground: #2d1f12;
+  --card: #ffffff;
+  --card-foreground: #2d1f12;
+  --muted: #f5ebe0;
+  --muted-foreground: #7d5235;
+  --border: #e8d5c0;
+  --ring: #ec4899;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --error: #dc2626;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
